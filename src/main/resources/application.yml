@@ -1,1 +1,13 @@
-spring.application.name=study-kotlin
+server:
+  port: 8081
+
+spring:
+  application:
+    name: "study-kotlin"
+  datasource:
+    url: jdbc:mysql://localhost:3307/mydb?allowPublicKeyRetrieval=true
+    username: root
+    password: juntae1111
+
+  jpa:
+    show-sql: true

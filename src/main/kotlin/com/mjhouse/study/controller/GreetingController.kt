@@ -10,6 +10,7 @@ class GreetingController(private val greetingService: GreetingService) {
 
     @GetMapping("/greet")
     fun greet(@RequestParam name: String): String {
+
         return greetingService.greet(name)
     }
 }
